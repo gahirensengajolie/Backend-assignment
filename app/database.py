@@ -100,4 +100,4 @@ def update_course(code, title, credits, department, description):
 
 def delete_course(code):
     with get_db_connection() as connection:
-        connection.execute("DELETE FROM courses WHERE code=?", (code,))
+        connection.execute("DELETE FROM courses WHERE code=?", (code))
